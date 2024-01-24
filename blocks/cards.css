@@ -1,0 +1,58 @@
+.cards {
+  margin-top: 51px;
+}
+
+.card__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 282px);
+  grid-gap: 20px 17px;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.card__title {
+  color: #000;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  font-size: 24px;
+  background-color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0px 0px 10px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: ;
+}
+
+.card__button {
+  width: 21px;
+  height: 18px;
+  margin: 31px 20px 30px 0;
+  background-image: url(../images/heart.png);
+  background-position: center;
+  border: none;
+  background-color: white;
+  padding: 0;
+  background-position: center;
+}
+
+.card__image {
+  width: 282px;
+  height: 282px;
+  border-radius: 10px 10px 0px 0px;
+}
