@@ -61,4 +61,46 @@
   background: transparent url(../images/addbutton.png) center no-repeat;
   margin-left: auto;
   padding: 0;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 369px) {
+  .profile__info_name {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile {
+    flex-direction: column;
+  }
+
+  .profile__info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .profile__description {
+    width: 100%;
+  }
+
+  .profile__add_button {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
 }
