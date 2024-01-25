@@ -14,4 +14,4 @@ This is a project called "Around The U.S." Where I will be createing an interact
 - Flat BEM file structure
 - Grid layout
 
-**Delpoyed website link**
+https://morgan-b-23.github.io/se_project_aroundtheus/
