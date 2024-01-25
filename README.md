@@ -1,26 +1,17 @@
 # Project 3: Around The U.S.
 
-### Overview
+This is a project called "Around The U.S." Where I will be createing an interactive page where users can add and remove photos, like photos of other users, and make adjustments to their own profile.
 
-- Intro
-- Video about project
-- Figma
-- Images
-
-**Intro**
-
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.
-
-**Brief video about project**
+**Brief overview of the project**
 
 - [link to video](https://drive.google.com/file/d/1svv1bAzOdX7JJTtpb1l3vOOtD0YhXmDY/view?usp=sharing)
 
-  **Figma**
+**Project features**
 
-- [Link to the project on Figma](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)
+- Semantic HTML5
+- Flexbox
+- Positioning
+- Flat BEM file structure
+- Grid layout
 
-**Images**
-
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
-
-Good luck and have fun!
+**Delpoyed website link**

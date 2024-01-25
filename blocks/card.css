@@ -1,0 +1,46 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.card__description {
+  color: #000;
+  background-color: white;
+  padding: 25px 20px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0 0 10px 10px;
+}
+
+.card__title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+}
+
+.card__button {
+  width: 21px;
+  height: 18px;
+  margin: 31px 20px 30px 0;
+  background-image: url(../images/heart.svg);
+  background-position: center;
+  border: none;
+  background-color: white;
+  padding: 0;
+  background-position: center;
+}
+
+.card__image {
+  width: 282px;
+  height: 282px;
+  border-radius: 10px 10px 0 0;
+}
