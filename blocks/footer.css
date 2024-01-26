@@ -1,6 +1,4 @@
 .footer {
-  margin: 0 auto;
-  width: 880px;
 }
 
 .footer__copyright {
@@ -10,13 +8,25 @@
   font-weight: 400;
   line-height: normal;
   color: #545454;
-  margin: 0;
-  margin: 67px 0 60px 0;
+  margin: 67px 0 60px 200px;
   width: 318px;
 }
 
-@media screen and (max-width: 369px) {
-  .footer {
+@media screen and (max-width: 568px) {
+  .footer__copyright {
+    font-size: 14px;
     margin: 67px 0 60px;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .footer {
+  }
+
+  .footer__copyright {
+    margin: 48px 0 36px;
+    padding: 0;
+    width: 282px;
+    font-size: 14px;
   }
 }
