@@ -29,14 +29,14 @@
 }
 
 .card__button {
-  width: 21px;
+  min-width: 21px;
   height: 18px;
   background-image: url(../images/heart.svg);
   background-position: center;
   border: none;
   background-color: transparent;
   padding: 0;
-  background-position: center;
+  background-size: 100%;
 }
 
 .card__button:hover {

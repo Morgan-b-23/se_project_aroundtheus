@@ -59,13 +59,14 @@
   width: 415px;
   color: white;
   font-family: "Inter", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   grid-area: description;
   margin: 7px 0 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  line-height: 17px;
 }
 
 .profile__add-button {
@@ -106,9 +107,9 @@
 
   .profile__name {
     font-size: 22px;
-    line-height: 22px;
     width: 196;
     margin: 26.25px 0 0;
+    line-height: 27px;
   }
 
   .profile__edit-button {
@@ -124,6 +125,5 @@
 
   .profile__add-button {
     width: 282px;
-    border: 2px solid white;
   }
 }
