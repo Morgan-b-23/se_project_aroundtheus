@@ -121,6 +121,8 @@
   .profile__desctription {
     width: 282px;
     margin: 14px 0 36px 0;
+    font-size: 14px;
+    line-height: 17px;
   }
 
   .profile__add-button {
