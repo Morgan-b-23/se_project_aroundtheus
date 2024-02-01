@@ -96,6 +96,33 @@
     <footer class="footer">
       <p class="footer__copyright">@2024 Around The U.S.</p>
     </footer>
+
+    <div class="modal">
+      <div class="modal__container">
+        <button class="modal__close-button"></button>
+        <form class="modal__form">
+          <h2 class="modal__title">Edit profile</h2>
+          <label class="form__input-container">
+            <input
+              placeholder="Jacques Cousteau"
+              class="form__input"
+              type="text"
+              name="profile__name"
+            />
+          </label>
+          <label class="form__input-container">
+            <input
+              placeholder="Explorer"
+              class="form__input"
+              type="text"
+              name="profile__desctription"
+            />
+          </label>
+          <button class="modal__save-button">Save</button>
+        </form>
+      </div>
+    </div>
+
     <script src="./scripts/index.js"></script>
   </body>
 </html>
