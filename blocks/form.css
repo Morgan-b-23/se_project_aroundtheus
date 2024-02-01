@@ -10,7 +10,7 @@
   line-height: 29px;
   margin-right: auto;
 }
-.form__input_container {
+.form__container {
   border-bottom: 1px solid rgba(0, 0, 0, 1);
   padding-bottom: 13.26px;
   max-height: 27.26px;
@@ -51,7 +51,7 @@
     margin: 0 0 45px 0;
   }
 
-  .form__input_container {
+  .form__container {
     width: 238px;
   }
 
