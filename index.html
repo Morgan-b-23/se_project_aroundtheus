@@ -22,79 +22,12 @@
             id="profile-edit-button"
             type="button"
           ></button>
-          <p class="profile__desctription">Explorer</p>
+          <p class="profile__description">Explorer</p>
         </div>
         <button class="profile__add-button" type="button"></button>
       </section>
       <section class="cards page__section">
-        <ul class="cards__list">
-          <li class="card">
-            <img
-              src="./images/yosemite.jpg"
-              alt="yosemite valley"
-              class="card__image"
-            />
-            <div class="card__description">
-              <h2 class="card__title">Yosemite Valley</h2>
-              <button class="card__button" type="button"></button>
-            </div>
-          </li>
-          <li class="card">
-            <img
-              src="./images/lake-louise.jpg"
-              alt="yosemite valley"
-              class="card__image"
-            />
-            <div class="card__description">
-              <h2 class="card__title">Lake louise</h2>
-              <button class="card__button" type="button"></button>
-            </div>
-          </li>
-          <li class="card">
-            <img
-              src="./images/bald-mountains.jpg"
-              alt="yosemite valley"
-              class="card__image"
-            />
-            <div class="card__description">
-              <h2 class="card__title">Bald Mountains</h2>
-              <button class="card__button" type="button"></button>
-            </div>
-          </li>
-          <li class="card">
-            <img
-              src="./images/latemar.jpg"
-              alt="yosemite valley"
-              class="card__image"
-            />
-            <div class="card__description">
-              <h2 class="card__title">Latemar</h2>
-              <button class="card__button" type="button"></button>
-            </div>
-          </li>
-          <li class="card">
-            <img
-              src="./images/vanoise.jpg"
-              alt="yosemite valley"
-              class="card__image"
-            />
-            <div class="card__description">
-              <h2 class="card__title">Vanoise National</h2>
-              <button class="card__button" type="button"></button>
-            </div>
-          </li>
-          <li class="card">
-            <img
-              src="./images/lago.jpg"
-              alt="yosemite valley"
-              class="card__image"
-            />
-            <div class="card__description">
-              <h2 class="card__title">Lago di Braies</h2>
-              <button class="card__button" type="button"></button>
-            </div>
-          </li>
-        </ul>
+        <ul class="cards__list"></ul>
       </section>
     </main>
     <footer class="footer">
@@ -108,24 +41,37 @@
           <h2 class="form__title">Edit profile</h2>
           <label class="form__container">
             <input
-              placeholder="Jacques Cousteau"
+              placeholder="Name"
               class="form__input"
+              id="form-name-input"
               type="text"
-              name="profile__name"
+              name="form__name"
             />
           </label>
           <label class="form__container">
             <input
-              placeholder="Explorer"
+              placeholder="Description"
               class="form__input"
+              id="form-description-input"
               type="text"
-              name="profile__desctription"
+              name="form__description"
             />
           </label>
           <button class="form__save-button">Save</button>
         </form>
       </div>
     </div>
+
+    <template id="card-template">
+      <li class="card">
+        <img class="card__image" src="" alt="" />
+        <div class="card__description">
+          <h2 class="card__title"></h2>
+          <button class="card__button" type="button"></button>
+        </div>
+      </li>
+    </template>
+
     <script src="./scripts/index.js"></script>
   </body>
 </html>
