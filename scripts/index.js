@@ -39,7 +39,7 @@ const cardListEl = document.querySelector(".cards__list");
 const cardTemplate =
   document.querySelector("#card-template").content.firstElementChild;
 
-function closePopop() {
+function closePopUp() {
   profileEditModal.classList.remove("modal_opened");
 }
 
@@ -47,9 +47,8 @@ function getCardElement(cardData) {
   const cardElement = cardTemplate.cloneNode(true);
   const cardImageEl = cardElement.querySelector(".card__image");
   const cardTitleEl = cardElement.querySelector(".card__title");
-  const cardImageAltEl = cardElement.querySelector(".card__image");
   cardImageEl.src = cardData.link;
-  cardImageAltEl.alt = cardData.name;
+  cardImageEl.alt = cardData.name;
   cardTitleEl.textContent = cardData.name;
   return cardElement;
 }
@@ -67,7 +66,7 @@ profileEditButton.addEventListener("click", () => {
   profileEditModal.classList.add("modal_opened");
 });
 
-modalCloseButton.addEventListener("click", closePopop);
+modalCloseButton.addEventListener("click", closePopUp);
 
 profileEditForm.addEventListener("submit", handleProfileEditSubmit);
 
