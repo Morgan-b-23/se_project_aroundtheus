@@ -57,7 +57,7 @@ function handleProfileEditSubmit(e) {
   e.preventDefault();
   profileName.textContent = profileNameInput.value;
   profileDescription.textContent = profileDescriptionInput.value;
-  closePopop();
+  closePopup();
 }
 
 profileEditButton.addEventListener("click", () => {
