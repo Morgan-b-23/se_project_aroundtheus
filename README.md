@@ -2,11 +2,7 @@
 
 This is a project called "Around The U.S." Where I will be createing an interactive page where users can add and remove photos, like photos of other users, and make adjustments to their own profile.
 
-**Brief overview of the project**
-
-- [link to video](https://drive.google.com/file/d/1svv1bAzOdX7JJTtpb1l3vOOtD0YhXmDY/view?usp=sharing)
-
-**Project features**
+## Project features
 
 - Semantic HTML5
 - Flexbox
@@ -14,4 +10,6 @@ This is a project called "Around The U.S." Where I will be createing an interact
 - Flat BEM file structure
 - Grid layout
 
-https://morgan-b-23.github.io/se_project_aroundtheus/
+## Plan on improving the project
+
+### Make it so userd can add content/pictures
