@@ -12,4 +12,4 @@ This is a project called "Around The U.S." Where I will be createing an interact
 
 ## Plan on improving the project
 
-### Make it so userd can add content/pictures
+### Make it so users can add content/pictures
