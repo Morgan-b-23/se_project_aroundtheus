@@ -39,7 +39,31 @@
   background-size: 100%;
 }
 
+.card__button_active {
+  background-image: url(../images/filled-in-heart.svg);
+}
+
 .card__button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.card__trash-button {
+  position: relative;
+  top: -274.7px;
+  right: 16px;
+  background-image: url(../images/Trash.svg);
+  background-color: white;
+  background-position: bottom;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  background-size: 100%;
+  min-width: 18px;
+  height: 19.3px;
+}
+
+.card__trash-button:hover {
   opacity: 0.5;
   cursor: pointer;
 }

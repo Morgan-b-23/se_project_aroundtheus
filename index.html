@@ -33,7 +33,6 @@
     <footer class="footer">
       <p class="footer__copyright">@2024 Around The U.S.</p>
     </footer>
-    <!--edit modal-->
     <div class="modal" id="profile-edit-modal">
       <div class="modal__container">
         <button class="modal__close-button" id="modal-close-button"></button>
@@ -61,7 +60,6 @@
         </form>
       </div>
     </div>
-    <!--add card modal-->
     <div class="modal" id="add-card-modal">
       <div class="modal__container">
         <button class="modal__close-button" id="modal-close-button"></button>
@@ -86,7 +84,15 @@
             />
           </label>
           <button class="form__save-button">Save</button>
+          <button class="card__trash-button" type="button"></button>
         </form>
+      </div>
+    </div>
+    <div class="modal" id="priview-image-modal">
+      <div class="modal__container priview__modal__container">
+        <button class="modal__close-button" id="modal-close-button"></button>
+        <img class="priview__image" src="" alt="" />
+        <h2 class="priview__title"></h2>
       </div>
     </div>
     <template id="card-template">
@@ -95,6 +101,7 @@
         <div class="card__description">
           <h2 class="card__title"></h2>
           <button class="card__button" type="button"></button>
+          <button class="card__trash-button" type="button"></button>
         </div>
       </li>
     </template>

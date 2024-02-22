@@ -6,12 +6,17 @@
   bottom: 0;
   left: 0;
   right: 0;
-  display: none;
+  display: flex;
   padding: 0 19px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s linear;
 }
 
 .modal_opened {
   display: flex;
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__container {
@@ -20,7 +25,7 @@
   border-radius: 10px;
   color: black;
   position: relative;
-  width: 430px;
+  max-height: 430px;
 }
 
 .modal__close-button {
