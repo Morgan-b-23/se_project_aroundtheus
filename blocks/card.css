@@ -51,14 +51,11 @@
 .card__trash-button {
   position: relative;
   top: -274.7px;
-  right: 16px;
+  right: 15px;
   background-image: url(../images/Trash.svg);
-  background-color: white;
-  background-position: bottom;
   border: none;
   background-color: transparent;
   padding: 0;
-  background-size: 100%;
   min-width: 18px;
   height: 19.3px;
 }
@@ -72,4 +69,9 @@
   width: 282px;
   height: 282px;
   border-radius: 10px 10px 0 0;
+}
+
+.card__image:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
