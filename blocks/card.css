@@ -2,16 +2,19 @@
   display: flex;
   flex-direction: column;
   list-style: none;
+  align-items: flex-end;
 }
 
 .card__description {
   color: #000;
   background-color: white;
-  padding: 25px 20px;
+  padding: 0;
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   border-radius: 0 0 10px 10px;
+  width: 282px;
+  height: 79px;
 }
 
 .card__title {
@@ -49,15 +52,17 @@
 }
 
 .card__trash-button {
-  position: relative;
-  top: -274.7px;
-  right: 15px;
+  position: absolute;
+  background-repeat: no-repeat;
   background-image: url(../images/Trash.svg);
   border: none;
   background-color: transparent;
   padding: 0;
-  min-width: 18px;
+  margin: 0;
+  width: 18px;
   height: 19.3px;
+  margin-top: 18px;
+  margin-right: 15px;
 }
 
 .card__trash-button:hover {
