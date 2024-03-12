@@ -49,9 +49,12 @@
               id="form-name-input"
               type="text"
               name="name"
+              minlength="2"
+              maxlength="40"
               required
             />
           </label>
+          <span class="form__error" id="form-name-input-error"></span>
           <label class="form__container">
             <input
               placeholder="Description"
@@ -59,10 +62,19 @@
               id="form-description-input"
               type="text"
               name="description"
+              minlength="2"
+              maxlength="200"
               required
             />
           </label>
-          <button class="form__save-button" type="submit">Save</button>
+          <span class="form__error" id="form-description-input-error"></span>
+          <button
+            class="form__save-button form__save-button_disabled"
+            type="submit"
+            disabled
+          >
+            Save
+          </button>
         </form>
       </div>
     </div>
@@ -82,20 +94,30 @@
               id="form-title-input"
               type="text"
               name="title"
+              minlength="1"
+              maxlength="30"
               required
             />
           </label>
+          <span class="form__error" id="form-title-input-error"></span>
           <label class="form__container">
             <input
               placeholder="Image URL"
-              class="form__input modal__input_type_title"
+              class="form__input"
               id="form-url-input"
               type="url"
               name="url"
               required
             />
           </label>
-          <button class="form__save-button" type="submit">Save</button>
+          <span class="form__error" id="form-url-input-error"></span>
+          <button
+            class="form__save-button form__save-button_disabled"
+            type="submit"
+            disabled
+          >
+            Save
+          </button>
         </form>
       </div>
     </div>
@@ -121,5 +143,6 @@
       </li>
     </template>
     <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/validation.js" defer></script>
   </body>
 </html>

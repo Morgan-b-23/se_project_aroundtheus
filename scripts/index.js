@@ -111,6 +111,32 @@ function renderCard(cardData) {
   cardListEl.prepend(cardElement);
 }
 
+function RemoteClickClose(evt) {
+  if (
+    evt.target === evt.currentTarget ||
+    evt.target.classList.contains("#modal-close-button")
+  ) {
+    closePopUp(evt.target);
+  }
+}
+
+function escapeClose(evt) {
+  if (evt.key === "Escape") {
+    const modal = document.querySelector(".modal_opened");
+    closeModal(modal);
+  }
+}
+
+function closeModal(modal) {
+  modal.classList.remove("modal_opened");
+  document.removeEventListener("keydown", escapeClose);
+}
+
+function openModal(modal) {
+  modal.classList.add("modal_opened");
+  document.addEventListener("keydown", escapeClose);
+}
+
 profileEditForm.addEventListener("submit", handleProfileEditSubmit);
 addCardFormElement.addEventListener("submit", handleAddCardFormSubmit);
 
@@ -131,5 +157,9 @@ addCardModalCloseButton.addEventListener("click", () =>
 priviewImageModalCloseButton.addEventListener("click", () =>
   closePopUp(priviewImageModal)
 );
+
+priviewImageModal.addEventListener("mousedown", RemoteClickClose);
+
+priviewImageModal.addEventListener("keydown", escapeClose);
 
 initialCards.forEach((cardData) => renderCard(cardData, cardListEl));
