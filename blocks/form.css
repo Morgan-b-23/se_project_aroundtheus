@@ -17,14 +17,20 @@
   width: 358px;
 }
 
+.form__container_error {
+  border-bottom: 1px solid rgb(140, 16, 16);
+  margin-top: 29.74px;
+  max-height: 27.26px;
+  width: 358px;
+}
+
 .form__error {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 14px;
-  border-bottom: #ff0000;
-  color: #ff0000;
+  border: none;
+  color: red;
   margin-bottom: 13px;
-  /*visibility: hidden;*/
   width: 100%;
   height: 12px;
 }
@@ -70,7 +76,7 @@
 
 .form__save-button_disabled {
   opacity: 0.5;
-  cursor: pointer;
+  cursor: default;
 }
 
 @media screen and (max-width: 630px) and (min-width: 320px) {

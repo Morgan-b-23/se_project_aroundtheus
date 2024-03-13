@@ -54,14 +54,6 @@ const cardUrlinput = addCardFormElement.querySelector("#form-url-input");
 const priviewImage = document.querySelector(".priview__image");
 const priviewTitle = document.querySelector(".priview__title");
 
-function closePopUp(modal) {
-  modal.classList.remove("modal_opened");
-}
-
-function openModal(modal) {
-  modal.classList.add("modal_opened");
-}
-
 function getCardElement(cardData) {
   const cardElement = cardTemplate.cloneNode(true);
   const cardImageEl = cardElement.querySelector(".card__image");
@@ -94,7 +86,7 @@ function handleProfileEditSubmit(e) {
   e.preventDefault();
   profileName.textContent = profileNameInput.value;
   profileDescription.textContent = profileDescriptionInput.value;
-  closePopUp(profileEditModal);
+  closeModal(profileEditModal);
 }
 
 function handleAddCardFormSubmit(e) {
@@ -102,7 +94,7 @@ function handleAddCardFormSubmit(e) {
   const name = cardTitleinput.value;
   const link = cardUrlinput.value;
   renderCard({ name, link }, cardListEl);
-  closePopUp(addCardModal);
+  closeModal(addCardModal);
   addCardModal.querySelector(".modal__form").reset();
 }
 
@@ -116,7 +108,7 @@ function RemoteClickClose(evt) {
     evt.target === evt.currentTarget ||
     evt.target.classList.contains("#modal-close-button")
   ) {
-    closePopUp(evt.target);
+    closeModal(evt.target);
   }
 }
 
@@ -148,18 +140,20 @@ profileEditButton.addEventListener("click", () => {
 
 addNewCardButton.addEventListener("click", () => openModal(addCardModal));
 
-modalCloseButton.addEventListener("click", () => closePopUp(profileEditModal));
+modalCloseButton.addEventListener("click", () => closeModal(profileEditModal));
 
 addCardModalCloseButton.addEventListener("click", () =>
-  closePopUp(addCardModal)
+  closeModal(addCardModal)
 );
 
 priviewImageModalCloseButton.addEventListener("click", () =>
-  closePopUp(priviewImageModal)
+  closeModal(priviewImageModal)
 );
 
 priviewImageModal.addEventListener("mousedown", RemoteClickClose);
 
-priviewImageModal.addEventListener("keydown", escapeClose);
+addCardModal.addEventListener("mousedown", RemoteClickClose);
+
+profileEditModal.addEventListener("mousedown", RemoteClickClose);
 
 initialCards.forEach((cardData) => renderCard(cardData, cardListEl));

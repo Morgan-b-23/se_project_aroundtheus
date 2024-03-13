@@ -27,6 +27,15 @@
   max-height: 430px;
 }
 
+..modal__container {
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  position: relative;
+  max-height: 430px;
+}
+
 .modal__close-button {
   background-image: url(../images/CloseIcon.svg);
   background-color: transparent;
