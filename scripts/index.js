@@ -103,7 +103,7 @@ function renderCard(cardData) {
   cardListEl.prepend(cardElement);
 }
 
-function RemoteClickClose(evt) {
+function remoteClickClose(evt) {
   if (
     evt.target === evt.currentTarget ||
     evt.target.classList.contains("#modal-close-button")
@@ -112,7 +112,7 @@ function RemoteClickClose(evt) {
   }
 }
 
-function escapeClose(evt) {
+function closeOnEscape(evt) {
   if (evt.key === "Escape") {
     const modal = document.querySelector(".modal_opened");
     closeModal(modal);
@@ -121,12 +121,12 @@ function escapeClose(evt) {
 
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
-  document.removeEventListener("keydown", escapeClose);
+  document.removeEventListener("keydown", closeOnEscape);
 }
 
 function openModal(modal) {
   modal.classList.add("modal_opened");
-  document.addEventListener("keydown", escapeClose);
+  document.addEventListener("keydown", closeOnEscape);
 }
 
 profileEditForm.addEventListener("submit", handleProfileEditSubmit);
@@ -150,10 +150,10 @@ priviewImageModalCloseButton.addEventListener("click", () =>
   closeModal(priviewImageModal)
 );
 
-priviewImageModal.addEventListener("mousedown", RemoteClickClose);
+priviewImageModal.addEventListener("mousedown", remoteClickClose);
 
-addCardModal.addEventListener("mousedown", RemoteClickClose);
+addCardModal.addEventListener("mousedown", remoteClickClose);
 
-profileEditModal.addEventListener("mousedown", RemoteClickClose);
+profileEditModal.addEventListener("mousedown", remoteClickClose);
 
 initialCards.forEach((cardData) => renderCard(cardData, cardListEl));
